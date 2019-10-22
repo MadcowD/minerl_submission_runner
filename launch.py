@@ -43,7 +43,7 @@ def create_recording_dirs(submission_id, overwrite=False):
 def main():
     opts = parse_args()
 
-    recording_dir = create_recording_dirs(opts.submission_id, True)
+    recording_dir = create_recording_dirs(opts.submission_id, False)
 
 
     subprocess.check_output(
