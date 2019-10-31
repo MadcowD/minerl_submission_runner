@@ -96,6 +96,7 @@ ENV NVIDIA_DRIVER_CAPABILITIES \
 
 
 WORKDIR /home/aicrowd
+RUN mkdir performance
 
 COPY recorder.sh /home/aicrowd
 COPY entrypoint_user.sh /home/aicrowd

@@ -22,6 +22,8 @@ Now to build a submission one uses the following syntax
 ```
 python3 build.py <submission_id>
 ```
+! Important: Add the ``--overwrite`` option if you've updated the Dockerfile or the `recorder.sh`.
+
 
 To launch a submission (make sure you are on a headed machine or have some xserver with display set!)
 ```
@@ -45,7 +47,8 @@ This will output an mp4 file in the recordings folder of the submission (contain
 
 ## Changing the Seed!
 Currently the program is set up to only set the seed of the first episode to '17'. You can
-seed any number of the episodes or change the first seed by modifying `recorder.sh` and rerunning build.sh
+seed any number of the episodes or change the first seed by modifying `recorder.sh` and rerunning `build.py`
+with the `--overwrite` option. 
 
 You can likewise change the number of episodes the evaluator will run in the `recorder.sh` file.
 
