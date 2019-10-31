@@ -1,1 +1,4 @@
 builds/
+
+__pycache__/
+.vscode/
