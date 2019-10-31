@@ -18,7 +18,7 @@ trap "kill -11 $! > /dev/null 2>&1;" EXIT
 
 # Run instance manager to generate performance report
 export EVALUATION_STAGE='manager'
-eval "python3 run.py --seeds 420691 4206969 420420 666666 666 666420 123321 456654 6006 60065 $EXTRAOUTPUT &"
+eval "python3 run.py --seeds 17 $EXTRAOUTPUT &"
 trap "kill -11 $! > /dev/null 2>&1;" EXIT
 
 # Run the evaluation

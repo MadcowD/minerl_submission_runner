@@ -9,6 +9,7 @@ TEMPLATE_DIR = os.path.abspath('.')
 SUBMISSION_ID_PLACEHOLDER = '%%%SUBMISSION_ID%%%'
 
 get_submission_dir =  lambda x: J(BUILD_DIR, str(x)) 
+get_recording_dir = lambda x: J(get_submission_dir(x), 'recordings', 'MineRLObtainDiamond-v0')
 
 SUBMISSION_IDS = [
     19482,

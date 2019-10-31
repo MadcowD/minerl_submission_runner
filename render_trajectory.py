@@ -106,7 +106,7 @@ def main(opts):
 
     # Render out the information and the trajectory
     # out_dir = 
-    # trajectory_display_controller.render(ep_folder)
+    trajectory_display_controller.render(ep_folder)
     with open(J(ep_folder, 'info.json'), 'w') as f:
         json.dump(info, f, indent="\t")
 
