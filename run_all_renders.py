@@ -19,5 +19,5 @@ if __name__ == '__main__':
     ], [])
 
     
-    run(*jobs[0])
-#    Parallel(32)(delayed(run)(*x) for x in jobs)
+#    run(*jobs[0])
+    Parallel(32)(delayed(run)(*x) for x in jobs)
